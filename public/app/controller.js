@@ -75,6 +75,17 @@ Controller.startSketch = function(name){
 
     sketch.createColors($('.sketch_holder'), sketch, colorArr)
 
+	$('.sketch_holder').append('<div class="button cmd_decsize"><i class="icon-minus-sign"></i></div>');
+	$('.sketch_holder').append('<div class="button cmd_incsize"><i class="icon-plus-sign"></i></div>');
+
+	$('.cmd_incsize').click(function(ev){
+        sketch.incRadius(5);
+    });
+
+    $('.cmd_decsize').click(function(ev){
+        sketch.incRadius(-5);
+    });
+
     $('.cmd_undo').click(function(ev){
         sketch.undoStroke();
     });

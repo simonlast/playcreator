@@ -26,6 +26,7 @@ body {
   text-align: center;
   display: inline;
   opacity: .8;
+  padding: 3px;
   -webkit-backface-visibility: hidden;
   /* Prevents flickering */
 

@@ -63,6 +63,10 @@ SketchTool.play = function(pjs) {
 		currRadius = radius;
 	};
 
+	pjs.incRadius = function(radius){
+		currRadius += radius;
+	};
+
 	pjs.getData = function(){
 		var data = [];
 		for(var i=0; i<strokes.length; i++){
@@ -199,6 +203,7 @@ SketchTool.create = function(canvasId, options){
 	sketch.reset = sketch.processingInstance.resetVars;
 	sketch.changeColor = sketch.processingInstance.changeColor;
 	sketch.changeRadius = sketch.processingInstance.changeRadius;
+	sketch.incRadius = sketch.processingInstance.incRadius;
 	sketch.getData = sketch.processingInstance.getData;
 	sketch.undoStroke = sketch.processingInstance.undoStroke;
 	sketch.getPNG = SketchTool.getPNG;
