@@ -153,7 +153,7 @@ Controller.attachListeners = function(){
 Controller.popUp = function(){
 	var about = 'Welcome! PlayCreator is a simple, visually-oriented programming language for young children.<br />';
 	var action = 'To jump right in, just press &nbsp; <div class="button menubutton cmd_verify"><i class="icon-play"></i></div>'
-	var more = '<br />Or, you can read more about the project <a href="/about">here.</a>'
+	var more = '<br />Or, you can read more about the project <a href="http://github.com/simonlast/playcreator">here.</a>'
 	$('body').append('<div class="welcome">' + about + action + more + '</div>')
 	localStorage.setItem('welcome', true);
 }
