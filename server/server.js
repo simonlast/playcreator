@@ -61,7 +61,7 @@ app.get("/play/:id" ,function(req,res){
 
 var server = http.createServer(app);
 
-server.listen(80);
+server.listen(process.argv[2] || 80);
 
 
 var randomString = function() {
